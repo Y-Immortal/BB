@@ -19,10 +19,6 @@ public class MyFragment extends Fragment {
 
     FragmentMyBinding binding;
 
-    ItemDialogBinding binding2;
-
-    Dialog dialog;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentMyBinding.inflate(getLayoutInflater());
@@ -30,17 +26,10 @@ public class MyFragment extends Fragment {
         binding.shangchuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dialog = new Dialog(getActivity());
+                Dialog dialog = new Dialog(getActivity());
                 dialog.setContentView(R.layout.item_dialog);
                 dialog.setCanceledOnTouchOutside(true);
                 dialog.show();
-            }
-        });
-
-        binding2.back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialog.dismiss();
             }
         });
 

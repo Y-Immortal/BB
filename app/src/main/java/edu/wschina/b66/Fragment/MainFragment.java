@@ -68,8 +68,6 @@ public class MainFragment extends Fragment {
                     }
 
                 });
-            } else {
-
             }
         });
 
