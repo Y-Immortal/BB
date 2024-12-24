@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/item_filletbox"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Best Pictures"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_filletbox2"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:hint="用户名"
+            android:paddingStart="20dp"
+            android:text="13315965753"
+            android:textSize="25sp" />
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:background="@drawable/item_filletbox2"
+                android:paddingStart="20dp"
+                android:text="12345678"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/close_eyes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="300dp"
+                android:src="@drawable/close_eyes" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/item_filletbox"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="前往注册&gt;&gt;"
+            android:textColor="#9224A5" />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

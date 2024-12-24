@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="125dp"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:id="@+id/avatarFile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:scaleType="fitXY" />
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_filletbox2"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:hint="用户名"
+            android:paddingStart="20dp"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_filletbox2"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:hint="邮箱"
+            android:paddingStart="20dp"
+            android:textSize="25sp" />
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/item_filletbox2"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/close_eyes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="300dp"
+                android:src="@drawable/close_eyes" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/password_two"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_filletbox2"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:hint="再次输入密码"
+            android:paddingStart="20dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/item_filletbox"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#858585"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="&lt;&lt;回到登录"
+            android:textColor="#9224A5" />
+
+    </LinearLayout>
+
+</FrameLayout>
